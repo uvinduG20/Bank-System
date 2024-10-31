@@ -1,0 +1,59 @@
+﻿@{
+    var user = ViewBag.User as BankWebApp.Models.User;
+    var account = ViewBag.Account as BankWebApp.Models.Account;
+    var recipients = ViewBag.Recipients as List<BankWebApp.Models.User>;
+}
+
+<link href="~/css/custom.css" rel="stylesheet" type="text/css" />
+
+<div class="container-fluid">
+    <h1 class="mb-4">Money Transfer</h1>
+
+    <div class="card mb-4">
+        <h3>Main Account</h3>
+        <p><strong>Account Number:</strong> @account?.AccountNumber</p>
+        <p class="account-balance"><strong>Balance:</strong> $@account?.Balance</p>
+    </div>
+
+    <!-- Money Transfer Form -->
+    <div class="card mb-4">
+        <h3>Transfer Money</h3>
+        <form method="post" action="/User/SubmitTransfer">
+            <div class="form-group">
+                <label for="recipient">Select Recipient:</label>
+                <select id="recipient" name="recipientAccountId" class="form-control" required>
+                    <option value="">-- Select Recipient --</option>
+                    @foreach (var recipient in recipients)
+                    {
+                        if (recipient.Role != "Admin") // Exclude Admins from the dropdown
+                        {
+                            <option value="@recipient.AccountId">@recipient.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" class="form-control" min="1" max="@account?.Balance" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Transfer</button>
+        </form>
+
+        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+            <p class="text-danger mt-3">@ViewBag.ErrorMessage</p>
+        }
+
+        @if (!string.IsNullOrEmpty(ViewBag.SuccessMessage))
+        {
+            <p class="text-success mt-3">@ViewBag.SuccessMessage</p>
+        }
+    </div>
+</div>
+
+@if (TempData["TransactionSuccess"] != null)
+{
+    <script>
+        alert('Transaction Successful!');
+    </script>
+}

@@ -1,0 +1,34 @@
+﻿<link rel="stylesheet" href="~/css/custom.css" />
+
+<nav id="sidebar" class="bg-primary">
+    <div class="sidebar-header text-white">
+        <h3>Admin Dashboard</h3>
+    </div>
+    <ul class="list-unstyled components">
+        <li>
+            <a href="@Url.Action("AdminProfile", "Admin")" class="text-white">
+                <i class="bi bi-person-fill mr-3"></i> Profile
+            </a>
+        </li>
+        <li>
+            <a href="@Url.Action("UserManagement", "Admin")" class="text-white">
+                <i class="bi bi-people-fill mr-3"></i> User Management
+            </a>
+        </li>
+        <li>
+            <a href="@Url.Action("TransactionManagement", "Admin")" class="text-white">
+                <i class="bi bi-bar-chart-fill mr-3"></i> Transactions
+            </a>
+        </li>
+        <li>
+            <a href="@Url.Action("SecurityLogs", "Admin")" class="text-white">
+                <i class="bi bi-shield-fill-check mr-3"></i> Security & Access Control
+            </a>
+        </li>
+        <li>
+            <a href="@Url.Action("Logout", "Home")" class="text-white">
+                <i class="bi bi-box-arrow-right mr-3"></i> Logout
+            </a>
+        </li>
+    </ul>
+</nav>

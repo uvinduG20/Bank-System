@@ -1,0 +1,119 @@
+﻿@{
+    var transactions = ViewBag.Transactions as List<BankWebApp.Models.Transaction>;
+}
+
+<link href="~/css/custom.css" rel="stylesheet" type="text/css" />
+
+<div class="container-fluid">
+    <h1 class="mb-4">Transaction Management</h1>
+
+    <!-- Search Bar -->
+    <div class="form-group mb-4">
+        <input type="text" id="search" class="form-control" placeholder="Search by Account ID..." />
+    </div>
+
+    <!-- Filter by Transaction Type -->
+    <div class="form-group mb-4">
+        <label for="filter">Filter by Transaction Type:</label>
+        <select id="filter" class="form-control">
+            <option value="">All</option>
+            <option value="Credited">Credited</option>
+            <option value="Debited">Debited</option>
+        </select>
+    </div>
+
+    <!-- Sort Options -->
+    <div class="form-group mb-4">
+        <label for="sort">Sort by:</label>
+        <select id="sort" class="form-control">
+            <option value="date_desc">Date (Newest to Oldest)</option>
+            <option value="date_asc">Date (Oldest to Newest)</option>
+            <option value="amount_desc">Amount (Highest to Lowest)</option>
+            <option value="amount_asc">Amount (Lowest to Highest)</option>
+        </select>
+    </div>
+
+    <!-- Transactions Table -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Transaction ID</th>
+                <th>Account ID</th>
+                <th>Transaction Type</th>
+                <th>Amount</th>
+                <th>Transaction Date</th>
+            </tr>
+        </thead>
+        <tbody id="transactionTable">
+            @if (transactions != null)
+            {
+                foreach (var transaction in transactions)
+                {
+                    <tr>
+                        <td>@transaction.TransactionId</td>
+                        <td>@transaction.AccountId</td>
+                        <td>@transaction.TransactionType</td>
+                        <td>$@transaction.Amount</td>
+                        <td>@transaction.TransactionDate.ToString("yyyy-MM-dd")</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- JavaScript -->
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // Search by Account ID
+        $('#search').on('keyup', function () {
+            var searchValue = $(this).val().toLowerCase();
+            $('#transactionTable tr').filter(function () {
+                $(this).toggle($(this).find('td:eq(1)').text().toLowerCase().indexOf(searchValue) > -1);
+            });
+        });
+
+        // Filter by Transaction Type (Credited or Debited)
+        $('#filter').on('change', function () {
+            var filterValue = $(this).val().toLowerCase();
+            $('#transactionTable tr').filter(function () {
+                if (filterValue === "") {
+                    $(this).show();
+                } else {
+                    $(this).toggle($(this).find('td:eq(2)').text().toLowerCase() === filterValue);
+                }
+            });
+        });
+
+        // Sort Transactions
+        $('#sort').on('change', function () {
+            var rows = $('#transactionTable tr').get();
+            var sortValue = $(this).val();
+
+            rows.sort(function (a, b) {
+                var A, B;
+
+                if (sortValue.includes('date')) {
+                    A = new Date($(a).find('td:eq(4)').text());
+                    B = new Date($(b).find('td:eq(4)').text());
+                } else if (sortValue.includes('amount')) {
+                    A = parseFloat($(a).find('td:eq(3)').text().replace('$', ''));
+                    B = parseFloat($(b).find('td:eq(3)').text().replace('$', ''));
+                }
+
+                if (sortValue === "date_asc" || sortValue === "amount_asc") {
+                    return A < B ? -1 : A > B ? 1 : 0;
+                } else {
+                    return A > B ? -1 : A < B ? 1 : 0;
+                }
+            });
+
+            $.each(rows, function (index, row) {
+                $('#transactionTable').append(row);
+            });
+        });
+    });
+</script>

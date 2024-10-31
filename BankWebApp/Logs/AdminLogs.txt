@@ -1,0 +1,134 @@
+0001-01-01 00:00:00 - UpdateProfile - Updated profile for admin admin
+0001-01-01 00:00:00 - CreateUser - Created user hesara_dw
+0001-01-01 00:00:00 - UpdateProfile - Updated profile for admin admin
+0001-01-01 00:00:00 - UpdateProfile - Updated profile for admin
+0001-01-01 00:00:00 - CreateUser - Created user hesara_dw
+0001-01-01 00:00:00 - UpdateProfile - Updated profile for admin
+0001-01-01 00:00:00 - CreateUser - Created user hesara_dw
+0001-01-01 00:00:00 - CreateUser - Created user hesara_dw
+0001-01-01 00:00:00 - UpdateProfile - Updated profile for admin
+0001-01-01 00:00:00 - CreateUser - Created user hesara_dw
+0001-01-01 00:00:00 - CreateUser - Created user hesara_dw
+0001-01-01 00:00:00 - UpdateProfile - Updated profile for admin
+2024-10-14 01:21:19 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:21:19 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:21:25 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:21:25 - UpdateUser (admin) - API Action: UpdateUser (admin), Status: Success, Status Code: NoContent, Message: 
+0001-01-01 00:00:00 - UpdateProfile - Updated profile for admin
+2024-10-14 01:21:25 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:21:27 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:21:28 - GetUserByUsername (jane_smith) - API Action: GetUserByUsername (jane_smith), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:21:38 - GetUserByUsername (charlie_brown) - API Action: GetUserByUsername (charlie_brown), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:21:41 - DeleteUser () - API Action: DeleteUser (), Status: Failure, Status Code: MethodNotAllowed, Message: 
+2024-10-14 01:21:52 - GetAllTransactions - API Action: GetAllTransactions, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:21:54 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:21:55 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:21:56 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:24:21 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:24:49 - DeleteUser () - API Action: DeleteUser (), Status: Failure, Status Code: MethodNotAllowed, Message: 
+2024-10-14 01:28:41 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:28:41 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:28:43 - GetAllTransactions - API Action: GetAllTransactions, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:28:45 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:28:46 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:28:51 - GetUserByUsername (charlie_brown) - API Action: GetUserByUsername (charlie_brown), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:28:54 - DeleteUser () - API Action: DeleteUser (), Status: Failure, Status Code: MethodNotAllowed, Message: 
+0001-01-01 00:00:00 - DeleteUser - Failed to delete user . API Response: 
+2024-10-14 01:29:20 - DeleteUser () - API Action: DeleteUser (), Status: Failure, Status Code: MethodNotAllowed, Message: 
+0001-01-01 00:00:00 - DeleteUser - Failed to delete user . API Response: 
+2024-10-14 01:29:28 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:29:30 - GetUserByUsername (charlie_brown) - API Action: GetUserByUsername (charlie_brown), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:29:33 - DeleteUser () - API Action: DeleteUser (), Status: Failure, Status Code: MethodNotAllowed, Message: 
+0001-01-01 00:00:00 - DeleteUser - Failed to delete user . API Response: 
+2024-10-14 01:35:40 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:35:46 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:35:46 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:35:51 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:35:51 - UpdateUser (admin) - API Action: UpdateUser (admin), Status: Success, Status Code: NoContent, Message: 
+0001-01-01 00:00:00 - UpdateProfile - Updated profile for admin
+2024-10-14 01:35:51 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:35:53 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:35:54 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:36:03 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:36:03 - CreateUser - API Action: CreateUser, Status: Success, Status Code: Created, Message: 
+0001-01-01 00:00:00 - CreateUser - Created user hesara_dw
+2024-10-14 01:36:04 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:40:26 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:40:26 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:40:32 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+0001-01-01 00:00:00 - UpdateProfile - Updated profile for admin
+2024-10-14 01:40:32 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:40:33 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:40:35 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:40:37 - GetUserByUsername (charlie_brown) - API Action: GetUserByUsername (charlie_brown), Status: Success, Status Code: OK, Message: 
+0001-01-01 00:00:00 - DeleteUser - Failed to delete user . API Response: 
+2024-10-14 01:40:46 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:40:46 - CreateUser - API Action: CreateUser, Status: Success, Status Code: Created, Message: 
+0001-01-01 00:00:00 - CreateUser - Created user hesara_dw
+2024-10-14 01:40:47 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:46:12 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:46:17 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:46:17 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:46:21 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:46:22 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:46:38 - GetUserByUsername (jane_smith) - API Action: GetUserByUsername (jane_smith), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:46:44 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:51:45 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:51:46 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:51:49 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:51:51 - GetUserByUsername (jane_smith) - API Action: GetUserByUsername (jane_smith), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:51:56 - GetUserByUsername (jane_smith) - API Action: GetUserByUsername (jane_smith), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:51:56 - UpdateUser (jane_smith) - API Action: UpdateUser (jane_smith), Status: Success, Status Code: NoContent, Message: 
+0001-01-01 00:00:00 - UpdateUser - Updated user jane_smith
+2024-10-14 01:51:57 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:51:59 - GetUserByUsername (charlie_brown) - API Action: GetUserByUsername (charlie_brown), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:52:03 - DeleteUser (charlie_brown) - API Action: DeleteUser (charlie_brown), Status: Success, Status Code: NoContent, Message: 
+0001-01-01 00:00:00 - DeleteUser - Deleted user charlie_brown
+2024-10-14 01:52:04 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:52:35 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:53:28 - GetUserByUsername (bob_johnson) - API Action: GetUserByUsername (bob_johnson), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:53:32 - GetUserByUsername (bob_johnson) - API Action: GetUserByUsername (bob_johnson), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:53:32 - UpdateUser (bob_johnson) - API Action: UpdateUser (bob_johnson), Status: Success, Status Code: NoContent, Message: 
+0001-01-01 00:00:00 - UpdateUser - Updated user bob_johnson
+2024-10-14 01:53:34 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:53:48 - GetUserByUsername (bob_johnson) - API Action: GetUserByUsername (bob_johnson), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:53:52 - DeleteUser (bob_johnson) - API Action: DeleteUser (bob_johnson), Status: Success, Status Code: NoContent, Message: 
+0001-01-01 00:00:00 - DeleteUser - Deleted user bob_johnson
+2024-10-14 01:53:53 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:53:58 - GetUserByUsername (alice_wong) - API Action: GetUserByUsername (alice_wong), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:54:04 - GetUserByUsername (alice_wong) - API Action: GetUserByUsername (alice_wong), Status: Success, Status Code: OK, Message: 
+2024-10-14 01:54:04 - UpdateUser (alice_wong) - API Action: UpdateUser (alice_wong), Status: Success, Status Code: NoContent, Message: 
+0001-01-01 00:00:00 - UpdateUser - Updated user alice_wong
+2024-10-14 01:54:05 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:54:16 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 01:54:16 - CreateUser - API Action: CreateUser, Status: Success, Status Code: Created, Message: 
+0001-01-01 00:00:00 - CreateUser - Created user hesara_dw
+2024-10-14 01:54:17 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 02:05:16 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 02:05:16 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 02:05:23 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 02:05:25 - GetUserByUsername (admin) - API Action: GetUserByUsername (admin), Status: Success, Status Code: OK, Message: 
+2024-10-14 02:05:26 - GetUserByUsername (jane_smith) - API Action: GetUserByUsername (jane_smith), Status: Success, Status Code: OK, Message: 
+2024-10-14 02:05:31 - GetUserByUsername (jane_smith) - API Action: GetUserByUsername (jane_smith), Status: Success, Status Code: OK, Message: 
+2024-10-14 02:05:31 - UpdateUser (jane_smith) - API Action: UpdateUser (jane_smith), Status: Success, Status Code: NoContent, Message: 
+2024-10-14 02:05:31 - UpdateUser - Updated user jane_smith
+2024-10-14 02:05:32 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 02:06:09 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 02:06:23 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 02:06:23 - CreateUser - API Action: CreateUser, Status: Success, Status Code: Created, Message: 
+2024-10-14 02:06:23 - CreateUser - Created user hesara_dw
+2024-10-14 02:06:24 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 02:06:40 - GetAllTransactions - API Action: GetAllTransactions, Status: Success, Status Code: OK, Message: 
+2024-10-14 02:06:40 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 02:06:42 - GetUserByUsername (bob_johnson) - API Action: GetUserByUsername (bob_johnson), Status: Success, Status Code: OK, Message: 
+2024-10-14 02:06:46 - GetUserByUsername (bob_johnson) - API Action: GetUserByUsername (bob_johnson), Status: Success, Status Code: OK, Message: 
+2024-10-14 02:06:46 - UpdateUser (bob_johnson) - API Action: UpdateUser (bob_johnson), Status: Success, Status Code: NoContent, Message: 
+2024-10-14 02:06:46 - UpdateUser - Updated user bob_johnson
+2024-10-14 02:06:48 - GetAllUsers - API Action: GetAllUsers, Status: Success, Status Code: OK, Message: 
+2024-10-14 02:09:26 - UpdateUser - Updated user jane_smith
+2024-10-14 02:09:30 - DeleteUser - Deleted user charlie_brown
+2024-10-14 02:09:46 - CreateUser - Created user uvindu_g
+2024-10-14 02:16:43 - UpdateProfile - Updated profile for admin
+2024-10-14 02:16:50 - UpdateUser - Updated user jane_smith
+2024-10-14 02:17:03 - DeleteUser - Deleted user charlie_brown
+2024-10-14 02:17:17 - CreateUser - Created user uvindu_g

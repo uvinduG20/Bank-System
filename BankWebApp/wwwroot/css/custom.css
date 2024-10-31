@@ -1,0 +1,175 @@
+﻿/* Global Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white; /* Make the entire page background white */
+}
+
+/* Sidebar Styling */
+#sidebar {
+    width: 250px;
+    background-color: #004aad; /* Primary color */
+    position: fixed;
+    height: 100%;
+    padding-top: 20px;
+}
+
+    #sidebar .sidebar-header {
+        padding: 20px;
+        font-size: 24px;
+        font-weight: 800; /* Extra bold Bank Dashboard title */
+        text-align: center;
+        background-color: transparent;
+    }
+
+    #sidebar ul.components {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    #sidebar ul li {
+        padding: 10px 20px;
+    }
+
+        #sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+            #sidebar ul li a i {
+                margin-right: 15px; /* Space between icons and text */
+            }
+
+            #sidebar ul li a:hover {
+                background-color: #005bb5;
+                border-radius: 8px;
+                transform: none;
+                transition: all 0.3s ease-in-out;
+            }
+
+/* Main Content Styling */
+#content {
+    margin-left: 250px;
+    padding: 40px;
+    width: calc(100% - 250px);
+    background-color: white; /* Ensure the main content background is also white */
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Card Styling for Account Info */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+    .card h3 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .card p {
+        margin: 10px 0;
+        font-size: 16px;
+        color: #666;
+    }
+
+    .card .account-balance {
+        font-size: 36px;
+        font-weight: 700;
+        color: #1168e2;
+    }
+
+/* Button Styling */
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+    .btn-custom:hover {
+        background-color: #0056b3;
+        color: white;
+    }
+
+.form-group {
+    margin-bottom: 1.5rem; /* Add more space between form elements */
+}
+
+/* Login Form Styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f6f9;
+}
+
+.login-box {
+    width: 350px;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+/* Form input styling */
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    outline: none;
+}
+
+    .form-control:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+/* Login button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .login-btn:hover {
+        background-color: #0056b3;
+    }

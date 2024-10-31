@@ -1,0 +1,50 @@
+﻿@{
+    var admin = ViewBag.Admin as BankWebApp.Models.User; // Assuming the admin is a User object
+}
+
+<link href="~/css/custom.css" rel="stylesheet" type="text/css" />
+
+<div class="container-fluid">
+    <h1 class="mb-4">Welcome, @admin?.Name</h1>
+
+    <div class="card mb-4">
+        <h3>Admin Profile</h3>
+        <p><strong>Email:</strong> @admin?.Email</p>
+        <p><strong>Phone:</strong> @admin?.Phone</p>
+        <p><strong>Address:</strong> @admin?.Address</p>
+
+        <!-- Edit Profile Button -->
+        <button class="btn btn-primary" id="edit-profile-btn">Edit Profile</button>
+    </div>
+
+    <!-- Edit Profile Form (Initially hidden) -->
+    <div class="card mb-4" id="edit-profile-form" style="display:none;">
+        <h3>Edit Profile</h3>
+        <form method="post" action="/Admin/UpdateAdminProfile">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="Email" value="@admin?.Email" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="Phone" value="@admin?.Phone" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="Address" value="@admin?.Address" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label for="password">New Password (leave blank if not changing):</label>
+                <input type="password" id="password" name="Password" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Toggle between profile display and edit form
+    document.getElementById("edit-profile-btn").addEventListener("click", function () {
+        document.getElementById("edit-profile-form").style.display = "block";
+    });
+</script>

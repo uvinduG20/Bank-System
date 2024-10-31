@@ -1,0 +1,58 @@
+﻿@{
+    var transactions = ViewBag.Transactions as List<BankWebApp.Models.Transaction>;
+}
+
+<link href="~/css/custom.css" rel="stylesheet" type="text/css" />
+
+<div class="container-fluid">
+    <h1 class="mb-4">Transaction History</h1>
+
+    <!-- Date Range Filter -->
+    <form id="filterForm" method="get" action="/User/TransactionHistory">
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" name="startDate" class="form-control" value="@Context.Request.Query["startDate"]" />
+            </div>
+            <div class="col-md-4">
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" name="endDate" class="form-control" value="@Context.Request.Query["endDate"]" />
+            </div>
+            <div class="col-md-4 d-flex align-items-end">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Transactions Table -->
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (transactions != null && transactions.Count > 0)
+                {
+                    foreach (var transaction in transactions)
+                    {
+                        <tr>
+                            <td>@transaction.TransactionDate.ToString("yyyy-MM-dd")</td>
+                            <td>@transaction.TransactionType</td>
+                            <td>@transaction.Amount.ToString("C")</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="3" class="text-center">No transactions found</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

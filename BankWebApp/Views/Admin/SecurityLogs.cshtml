@@ -1,0 +1,95 @@
+﻿@{
+    var logs = ViewBag.Logs as List<string>;
+}
+
+<link href="~/css/custom.css" rel="stylesheet" type="text/css" />
+
+<div class="container-fluid">
+    <h1 class="mb-4">Security & Access Control</h1>
+
+    <!-- Search Bar -->
+    <div class="form-group mb-4">
+        <input type="text" id="search" class="form-control" placeholder="Search logs..." />
+    </div>
+
+    <!-- Filter by Action -->
+    <div class="form-group mb-4">
+        <label for="filter">Filter by Action:</label>
+        <select id="filter" class="form-control">
+            <option value="">All</option>
+            <option value="CreateUser">Create User</option>
+            <option value="DeleteUser">Delete User</option>
+            <option value="UpdateProfile">Update Profile</option>
+            <option value="Transaction">Transaction</option>
+        </select>
+    </div>
+
+    <!-- Logs Table -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Admin</th>
+                <th>Action</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody id="logsTable">
+            @if (logs != null && logs.Count > 0)
+            {
+                var sortedLogs = logs.AsEnumerable().Reverse(); // Use Enumerable.Reverse() to avoid modifying the original list
+                foreach (var log in sortedLogs)
+                {
+                    var logParts = log.Split(" - "); // Assuming logs follow the "timestamp - action - details" format
+                    if (logParts.Length >= 3)
+                    {
+                        var timestamp = logParts[0];
+                        var action = logParts[1];
+                        var details = logParts[2];
+
+                        <tr>
+                            <td>@timestamp</td>
+                            <td>Admin</td>
+                            <td>@action</td>
+                            <td>@details</td>
+                        </tr>
+                    }
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="4">No logs available.</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // Search logs by keyword
+        $('#search').on('keyup', function () {
+            var searchValue = $(this).val().toLowerCase();
+            $('#logsTable tr').filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1);
+            });
+        });
+
+        // Filter logs by action type
+        $('#filter').on('change', function () {
+            var filterValue = $(this).val().toLowerCase();
+            $('#logsTable tr').filter(function () {
+                if (filterValue === "") {
+                    $(this).show();
+                } else {
+                    $(this).toggle($(this).find('td:eq(2)').text().toLowerCase().indexOf(filterValue) > -1);
+                }
+            });
+        });
+    });
+</script>

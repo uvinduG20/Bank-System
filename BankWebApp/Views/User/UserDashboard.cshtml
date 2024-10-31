@@ -1,0 +1,20 @@
+﻿@{
+    var user = ViewBag.User as BankWebApp.Models.User;
+    var account = ViewBag.Account as BankWebApp.Models.Account;
+}
+<link href="~/css/custom.css" rel="stylesheet" type="text/css" />
+
+<div class="container-fluid">
+    <h1 class="mb-4">Welcome, @user?.Name</h1>
+
+    <div class="card mb-4">
+        <h3>Main Account</h3>
+        <p><strong>Account Number:</strong> @account?.AccountNumber</p>
+        <p class="account-balance"><strong>Balance:</strong> $@account?.Balance</p>
+    </div>
+
+    <div class="mb-4">
+        <a href="@Url.Action("MoneyTransfer", "User")" class="btn btn-primary mr-2">New Transfer</a>
+        <a href="@Url.Action("TransactionHistory", "User")" class="btn btn-primary">Full History</a>
+    </div>
+</div>
